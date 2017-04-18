@@ -1,5 +1,5 @@
+var load = require('express-load');
 var express = require('express');
-var home = require('../app/routes/home');
 
 module.exports = function(){
 	var app = express();
@@ -15,7 +15,10 @@ module.exports = function(){
 	// deprecated!
 	// app.use(app.router);
 
-	home(app);
+	load('models', {cwd: 'app'})
+		.then('controllers')
+		.then('routes')
+		.into(app);
 
 	return app;
 };
