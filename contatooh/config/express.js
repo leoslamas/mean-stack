@@ -11,7 +11,9 @@ module.exports = function(){
 
 	//middleware
 	app.use(express.static('./public'));
-	app.use(app.router);
+	
+	// deprecated!
+	// app.use(app.router);
 
 	home(app);
 
