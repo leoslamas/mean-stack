@@ -1,6 +1,6 @@
 ### Getting Started
 
-From contatooh:
+From contatooh/:
 
 `npm install`
 
