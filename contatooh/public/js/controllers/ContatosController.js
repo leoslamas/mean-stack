@@ -1,7 +1,11 @@
 angular.module('contatooh').controller('ContatosController', function($scope){
-   $scope.total = 0; 
+    $scope.total = 0; 
 
-   //	Object
+    $scope.incrementa = function(){
+        $scope.total++;
+    }
+
+    //	Object
     $scope.contato	=	{
         nome:	'Flávio	Henrique',	
         sobrenome:	'Souza	Almeida'
