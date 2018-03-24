@@ -34,4 +34,6 @@ angular.module('contatooh').controller('ContatosController', function($scope){
             "email": "cont3@empresa.com.br"
         }
     ];
+
+    $scope.filtro = '';
 });
