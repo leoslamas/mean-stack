@@ -2,3 +2,6 @@
 contatooh/node_modules/*
 contatooh/.idea/*
 Mean.code-workspace
+.vscode/*
+contatooh/package-lock.json
+package-lock.json
