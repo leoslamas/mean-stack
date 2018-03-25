@@ -1,4 +1,4 @@
-angular.module('contatooh', ['ngRoute']).config(function($routeProvider){
+angular.module('contatooh', ['ngRoute', 'ngResource']).config(function($routeProvider){
 
         $routeProvider.when('/contatos',  {
             templateUrl: 'partials/contatos.html',
@@ -6,7 +6,7 @@ angular.module('contatooh', ['ngRoute']).config(function($routeProvider){
         });
 
         $routeProvider.when('/contato/:contatoId',	{
-            templateUrl:	'partials/contato.html',	
+            templateUrl: 'partials/contato.html',	
             controller:	'ContatoController'
         });
 
