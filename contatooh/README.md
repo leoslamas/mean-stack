@@ -13,10 +13,16 @@ or:
 
 ### Database
 
-1 - Install MongoDB
-2 - Start `mongod(.exe)`
-3 - Run `mongo`
+> Install MongoDB
+
+> Start `mongod(.exe)`
+
+> Run `mongo`
+
 >`use contatooh`
+
 >`var contato = { "nome" : "Nome do Contato" }`
+
 >`db.contatos.insert(contato)`
+
 >`db.contatos.find()`
