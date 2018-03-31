@@ -1,4 +1,4 @@
-angular.module('contatooh').controller('ContatosController', function ($scope, $resource) {
+angular.module('contatooh').controller('ContatosController', function ($scope, Contato) {
     $scope.contatos = [];
     $scope.filtro = '';
     $scope.mensagem = { texto: '' };
@@ -11,8 +11,6 @@ angular.module('contatooh').controller('ContatosController', function ($scope, $
             console.log("Não foi possível obter a lista de contatos");
             console.log(statusText);
     });*/
-
-    var Contato = $resource('/contatos/:id');
 
     function buscaContatos() {
         Contato.query(
