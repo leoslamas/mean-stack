@@ -10,3 +10,9 @@ or:
 
 `nodemon server`
 (npm install nodemon -g)
+
+### Database
+
+Install MongoDB
+
+Start `mongod(.exe)`
