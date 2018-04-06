@@ -3,8 +3,16 @@ module.exports = function(app) {
 	var Contato = app.models.contato;
 	
 	controller.listaContatos = function(req, res) {
-	// envia a lista
-		res.json(contatos);
+		Contato.find().exec()
+			.then(
+				function (contatos) {
+					res.json(contatos);
+				},
+				function (erro) {
+					console.error(erro);
+					res.status(500).json(erro);
+				}
+			);
 	};
 
 	controller.obtemContato = function(req, res) {
