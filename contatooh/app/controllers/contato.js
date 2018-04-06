@@ -31,6 +31,7 @@ module.exports = function(app) {
 
 	controller.removeContato = function(req, res) {
 		var _id = req.params.id;
+		//findByIdAndRemove()
 		Contato.remove({ "_id": _id }).exec()
 			.then(
 				function () {
