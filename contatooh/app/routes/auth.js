@@ -6,4 +6,9 @@ module.exports = function (app) {
         passport.authenticate('github', {
             successRedirect: '/'
         }));
+
+    app.get('/logout', function (req, res) {
+        req.logOut(); // exposto pelo passport
+        res.redirect('/');
+    });
 }
