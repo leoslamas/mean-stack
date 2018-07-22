@@ -47,21 +47,26 @@ module.exports = function(app) {
 
 	controller.salvaContato = function (req, res) {
 		var _id = req.body._id;
-		// testando por undefined - [TypeError: Cannot read property '_id' of undefined]
-		req.body.emergencia = req.body.emergencia || null;
+
+		var dados = {
+			"nome": req.body.nome,
+			"email": req.body.email,
+			"emergencia": req.body.emergencia || null
+		};
+		
 		if (_id) {
-			Contato.findByIdAndUpdate(_id, req.body).exec()
+			Contato.findByIdAndUpdate(_id, dados).exec()
 				.then(
 					function (contato) {
 						res.json(contato);
 					},
 					function (erro) {
-						console.error(erro);
+						console.error(erro)
 						res.status(500).json(erro);
 					}
 				);
 		} else {
-			Contato.create(req.body)
+			Contato.create(dados)
 				.then(
 					function (contato) {
 						res.status(201).json(contato);
