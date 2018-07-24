@@ -26,3 +26,7 @@ or:
 >`db.contatos.insert(contato)`
 
 >`db.contatos.find()`
+
+### Building
+
+>`grunt`
