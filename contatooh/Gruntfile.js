@@ -13,8 +13,16 @@ module.exports = function (grunt) {
                 src: ['**', '!Gruntfile.js', '!package.json', '!bower.json'],
                 dest: 'dist'
             }
+        },
+        clean: {
+            dist: {
+                src: 'dist'
+            }
         }
     });
-    
+
+    grunt.registerTask('default', ['dist']); //grunt sem parametros
+    grunt.registerTask('dist', ['clean', 'copy']);
     grunt.loadNpmTasks('grunt-contrib-copy');
+    grunt.loadNpmTasks('grunt-contrib-clean');
 };
