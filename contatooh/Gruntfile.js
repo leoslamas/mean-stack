@@ -7,7 +7,12 @@ module.exports = function (grunt) {
             /* configurações do tarefa2 */
         },
         copy: {
-            /* configurações da tarefa grunt-contrib-copy */
+            project: {
+                expand: true,
+                cwd: '.',
+                src: ['**', '!Gruntfile.js', '!package.json', '!bower.json'],
+                dest: 'dist'
+            }
         }
     });
     

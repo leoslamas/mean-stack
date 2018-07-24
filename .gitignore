@@ -5,3 +5,4 @@ Mean.code-workspace
 .vscode/*
 contatooh/package-lock.json
 package-lock.json
+contatooh/dist/*
