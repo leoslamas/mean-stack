@@ -27,5 +27,8 @@
   "repository": {
     "type": "git",
     "url": "git@github.com:leoslamas/javascript-mean-stack.git"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.5"
   }
 }
