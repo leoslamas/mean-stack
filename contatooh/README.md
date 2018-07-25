@@ -30,8 +30,10 @@ or:
 ### Building
 
 >`grunt`
+(npm install -g grunt-cli@0.1)
 
 ### Testing
 
 Init Karma
 >`karma init config/karma.config.js`
+(npm install -g karma-cli@0.0)
