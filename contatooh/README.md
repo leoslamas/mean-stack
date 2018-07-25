@@ -30,3 +30,8 @@ or:
 ### Building
 
 >`grunt`
+
+### Testing
+
+Init Karma
+>`karma init config/karma.config.js`
