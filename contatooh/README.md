@@ -36,4 +36,7 @@ or:
 
 Init Karma
 >`karma init config/karma.config.js`
-(npm install -g karma-cli@0.0)
+(npm install -g karma-cli)
+
+Run tests
+>`karma start config/karma.config.js`
