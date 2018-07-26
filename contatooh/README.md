@@ -6,6 +6,10 @@ From contatooh/:
 
 > `npm install -g karma-cli`
 
+> `npm install -g protractor@1.5`
+
+> `webdriver-manager update`
+
 > `npm install -g grunt-cli@0.1`
 
 > `npm install -g bower && bower install`
@@ -23,12 +27,15 @@ or
 
 # Building
 
->`grunt`
+> `grunt`
 
 # Testing
 
 Init Karma
->`karma init config/karma.config.js`
+> `karma init config/karma.config.js`
 
 Run tests
->`karma start config/karma.config.js`
+> `karma start config/karma.config.js`
+
+Protractor
+> `webdriver-manager start`
