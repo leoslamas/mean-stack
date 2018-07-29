@@ -21,6 +21,7 @@
     "mongodb": "^2.2.19",
     "mongoose": "^5.0.12",
     "mongoose-findorcreate": "^0.1.2",
+    "npm": "^6.2.0",
     "passport": "^0.2.2",
     "passport-github": "^0.1.5"
   },
