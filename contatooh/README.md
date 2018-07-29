@@ -37,6 +37,8 @@ Init Karma
 Run tests
 > `karma start config/karma.config.js`
 
-Selenium/Protractor
+Run e2e tests
 > `webdriver-manager update`
 > `webdriver-manager start`
+
+> `protractor config/protractor.js`
