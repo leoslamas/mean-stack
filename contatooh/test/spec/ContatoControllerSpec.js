@@ -19,6 +19,7 @@ describe("ContatoController", function () {
             });
             expect($scope.contato._id).toBeUndefined();
         }));
+        
     it("Deve preencher o Contato quando parâmetro de rota for passado",
         inject(function ($controller) {
             $controller('ContatoController', {

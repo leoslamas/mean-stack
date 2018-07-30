@@ -6,7 +6,7 @@ From contatooh/:
 
 > `npm install -g karma-cli`
 
-> `npm install -g protractor@1.5`
+> `npm install -g protractor`
 
 > `webdriver-manager update`
 
@@ -38,7 +38,4 @@ Run tests
 > `karma start config/karma.config.js`
 
 Run e2e tests
-> `webdriver-manager update`
-> `webdriver-manager start`
-
 > `protractor config/protractor.js`
