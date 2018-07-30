@@ -8,3 +8,6 @@ package-lock.json
 contatooh/dist/*
 contatooh/.tmp/*
 contatooh/public/vendor/*
+contatooh/.DS_Store
+contatooh/.DS_Store?
+contatooh/scripts/
