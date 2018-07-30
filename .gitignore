@@ -8,4 +8,3 @@ package-lock.json
 contatooh/dist/*
 contatooh/.tmp/*
 contatooh/public/vendor/*
-contatooh/config/passwords.js
