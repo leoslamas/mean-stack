@@ -16,8 +16,7 @@ From contatooh/:
 
 > `node server`
 or
-> `nodemon server`
-(npm install nodemon -g)
+> `nodemon server` (npm install nodemon -g)
 
 # Database
 
