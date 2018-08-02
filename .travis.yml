@@ -1,6 +1,4 @@
 language: node_js
-node_js:
-- 0.10
 notifications:
 - leoslamas@gmail.com
 before_install:
