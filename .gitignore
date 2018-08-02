@@ -1,13 +1,12 @@
 # ignoring #
-contatooh/node_modules/*
-contatooh/.idea/*
+node_modules/*
+.idea/*
 Mean.code-workspace
 .vscode/*
-contatooh/package-lock.json
 package-lock.json
-contatooh/dist/*
-contatooh/.tmp/*
-contatooh/public/vendor/*
-contatooh/.DS_Store
-contatooh/.DS_Store?
-contatooh/scripts/
+dist/*
+.tmp/*
+public/vendor/*
+.DS_Store
+.DS_Store?
+scripts/
