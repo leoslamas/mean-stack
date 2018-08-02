@@ -30,9 +30,6 @@ or
 
 # Testing
 
-Init Karma
-> `karma init config/karma.config.js`
-
 Run tests
 > `karma start config/karma.config.js`
 
