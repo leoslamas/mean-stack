@@ -1,5 +1,4 @@
-var Logar = new require('./passwords');
-var l = new Logar();
+var config = require('./config')();
 
 exports.config = {
     specs: ['../test/e2e/**/*.js'],
@@ -7,9 +6,9 @@ exports.config = {
         browser.driver.get('http://localhost:3000/#/auth');
         browser.driver.findElement(by.id('entrar')).click();
         browser.driver.findElement(by.id('login_field'))
-            .sendKeys(l.login());
+            .sendKeys(config.seleniumUser);
         browser.driver.findElement(by.id('password'))
-            .sendKeys(l.pass());
+            .sendKeys(config.seleniumUserPassword);
         browser.driver.findElement(by.name('commit')).click();
     }
 };
