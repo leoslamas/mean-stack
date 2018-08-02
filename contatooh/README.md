@@ -10,7 +10,7 @@ From contatooh/:
 
 > `webdriver-manager update`
 
-> `npm install -g grunt-cli@0.1`
+> `npm install -g grunt-cli`
 
 > `npm install -g bower && bower install`
 
