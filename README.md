@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/leoslamas/javascript-mean-stack.svg?branch=master)](https://travis-ci.org/leoslamas/javascript-mean-stack)
+
 # Getting Started
 
 From contatooh/:
