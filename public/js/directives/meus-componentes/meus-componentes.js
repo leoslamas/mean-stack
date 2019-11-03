@@ -40,7 +40,12 @@ angular.module('meusComponentes', [])
         };
 
         directive.link = function (scope, element) {
-
+            scope.$watch('focus', function () {
+                if (scope.focus) {
+                    element[0].focus();
+                    scope.focus = false;
+                }
+            });
         };
 
         return directive;
