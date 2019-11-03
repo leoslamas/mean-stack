@@ -33,6 +33,8 @@ or
 # Testing
 
 Run tests
+> `npm install karma-ng-html2js-preprocessor@0.1 --save-dev`
+
 > `karma start config/karma.config.js`
 
 Run e2e tests
