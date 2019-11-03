@@ -30,4 +30,18 @@ angular.module('meusComponentes', [])
 
 
         return directive;
+    })
+    .directive('meuFocus', function () {
+        var directive = {};
+        directive.restrict = 'A';
+
+        directive.scope = {
+            focus: '='
+        };
+
+        directive.link = function (scope, element) {
+
+        };
+
+        return directive;
     });
