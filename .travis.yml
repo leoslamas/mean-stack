@@ -11,6 +11,8 @@ before_install:
 - webdriver-manager update
 - bower install
 before_script:
+#- node test/data.js
+#- grunt minifica
 - grunt
 - cd dist
 script:
