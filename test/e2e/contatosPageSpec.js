@@ -11,7 +11,7 @@ describe('Página principal', function () {
             expect(texto.trim().length).toBeGreaterThan(0);
         });
     });
-    
+
     it('Deve remover um contato da lista', function () {
         var totalAntes = pagina.obterTotalDeItensDaLista();
         pagina.removerPrimeiroItemDaLista();

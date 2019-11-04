@@ -6,15 +6,13 @@ module.exports = function (app) {
 
 	controller.listaContatos = function (req, res) {
 		Contato.find().populate('emergencia').exec()
-			.then(
-				function (contatos) {
-					res.json(contatos);
-				},
-				function (erro) {
-					console.error(erro);
-					res.status(500).json(erro);
-				}
-			);
+			.then(function (contatos) {
+				res.json(contatos);
+			})
+			.catch(function (erro) {
+				console.error(erro);
+				res.status(500).json(erro);
+			});
 	};
 
 	controller.obtemContato = function (req, res) {
@@ -23,26 +21,23 @@ module.exports = function (app) {
 			.then(function (contato) {
 				if (!contato) throw new Error("Contato não encontrado");
 				res.json(contato);
-			},
-				function (erro) {
-					console.log(erro);
-					res.status(404).json(erro);
-				}
-			);
+			})
+			.catch(function (erro) {
+				console.log(erro);
+				res.status(404).json(erro);
+			});
 	};
 
 	controller.removeContato = function (req, res) {
 		var _id = sanitize(req.params.id);
 		//findByIdAndRemove()
 		Contato.remove({ "_id": _id }).exec()
-			.then(
-				function () {
-					res.status(204).end();
-				},
-				function (erro) {
-					return console.error(erro);
-				}
-			);
+			.then(function () {
+				res.status(204).end();
+			})
+			.catch(function (erro) {
+				return console.error(erro);
+			});
 	};
 
 	controller.salvaContato = function (req, res) {
@@ -56,26 +51,22 @@ module.exports = function (app) {
 
 		if (_id) {
 			Contato.findByIdAndUpdate(_id, dados).exec()
-				.then(
-					function (contato) {
-						res.json(contato);
-					},
-					function (erro) {
-						console.error(erro)
-						res.status(500).json(erro);
-					}
-				);
+				.then(function (contato) {
+					res.json(contato);
+				})
+				.catch(function (erro) {
+					console.error(erro)
+					res.status(500).json(erro);
+				});
 		} else {
 			Contato.create(dados)
-				.then(
-					function (contato) {
-						res.status(201).json(contato);
-					},
-					function (erro) {
-						console.log(erro);
-						res.status(500).json(erro);
-					}
-				);
+				.then(function (contato) {
+					res.status(201).json(contato);
+				})
+				.catch(function (erro) {
+					console.log(erro);
+					res.status(500).json(erro);
+				});
 		}
 	};
 
